@@ -29,6 +29,8 @@ int main(){
       total = qtd*1.50;
       printf("Total: R$ %.2f\n",total);
       break;
+    default:
+      printf("opção inválida");
   }
   return 0;
 }
