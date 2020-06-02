@@ -35,7 +35,7 @@ int main(void) { //funcao principal
   printf("Deseja fazer contas?[S/N]: ");
   scanf("%s",res);
 
-  resposta = strcmp(res,"Sim");
+  resposta = stricmp(res,"Sim");
 
   if(resposta == 0){
     while(op != 5){
