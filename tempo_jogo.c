@@ -6,12 +6,10 @@ int main(void){
     int hi, mi, hf, mf;
     scanf("%i %i %i %i", &hi, &mi, &hf, &mf);
     int horas = 0;
-    if(hi==hf && mi > mf){
+    if((hi==hf && mi > mf) || (hi==hf && mi==mf)){
         horas = 24;
     }if(mi>mf){
         horas -= 1;
-    }else if(hi==hf && mi==mf){
-        horas = 24;
     }
     int minutos = 0;
     for(i=hi;i != hf;i++){
@@ -28,3 +26,4 @@ int main(void){
     }
     printf("O JOGO DUROU %i HORA(S) E %i MINUTO(S)\n", horas, minutos);
 }
+
